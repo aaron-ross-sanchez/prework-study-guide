@@ -16,34 +16,302 @@
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
+        <p>Hypertext Markup Language, HTML gives the content structure.</p>
+        <h3 class="subheader">Basics</h3>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>An <b>element</b> refers to the entire element from opening tag to closing tag.</li>
+          <li>A <b>tag</b> refers only to what appears inside the angle brackets.</li>
+          <li>The &lt;opening&gt; tag begins the element. They start with a left-angle bracket and end with a right-angle bracket.</li>
+          <li>The &lt;/closing&gt; tag ends the element. They also start with a left-angle bracket and end with a right-angle bracket, although they contain a forward slash before the character.</li>
+          <li>The &lt;!DOCTYPE html&gt; delcaration tells the browser what document type it should expect when it is opened.</li>
+          <li>The &lt;html&gt; element indicates that anything that is coded between its opening and closing tags are HTML code.</li>
+          <li>The lang attribute tells the browser the language for the webpage, and = "en" defines the language as English. This is what is looks like within the code: &lt;html lang="en"&gt;</li>
+          <li>The &lt;section&gt; elements are semantic elements that define a section in a document that contains thematic content.</li>
+          <li>The id attribute identifies elements and selects them.</li>
+          <!-- Be sure to include &lt; AND &gt;-->
         </ul>
+        <br>
+        <h3 class="subheader">Head</h3>
+        <ul>
+          <li>The &lt;head&gt; element contains the metadata for our web page application.</li>
+            <p class="example">Here are some examples of metadata tags: <b>Title, Style, Base, Link, Meta, and Script.</b></p>
+          <li>The &lt;title&gt; element defines the title for a webpage. It is either shown in the top of the browser or on the tab of that page. </li>
+          <li>The &lt;style&gt; element defines the CSS styles associated with a website.</li>
+          <li>The &lt;base&gt; element defines the base URL for a webpage.</li>
+          <li>The &lt;link&gt; element connects an external resource to the HTML document.</li>
+          <li>The &lt;meta&gt; element defines metadata such as the character set, description, keywords, author, and viewport.</li>
+          <li>The &lt;script&gt; element embeds client-side scripts in the HTML document.</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Body</h3>
+        <ul>
+          <li>The &lt;body&gt; element represents the visible content shown to the user.</li>
+          <li><b>Child elements</b> are elements that are nested inside other elements.</li>
+          <li><b>Parent elements</b> are elements that holds all the children. Parent elements can have multiple children elements. The <strong>&lt;body&gt;</strong> element is an example of a <strong>semantic element.</strong></li>
+          <li>The &lt;br&gt; element creates a line of empty space, or a line break, between two blocks of content.</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Semantic markup</h3>
+        <!--Is this the correct use of semantic v structural?-->
+        <ul>
+          <li>Semantic HTML elements make HTML easier to read by other developers and the browser. It also provides accessibility to a variety of users, including those with screen readers.<br /> It is best to use semantic elements whenever possible.</li> 
+          <li>The &lt;div&gt; tag creates a division in the page.</li>
+          <li>The &lt;span&gt; tag creates an inline division.</li>
+          <li>Strong - Text inside these &lt;strong&gt<strong>strong opening and closing tags</strong>&lt;/strong&gt; will appear in bold.</li>
+          <li>Emphasis - Text inside these &lt;em&gt<em>emphasis opening and closing tags</em>&lt;/em&gt; will appear in italic.</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Structural markup</h3>
+        <ul>
+          <li>Headings - There are six different levels of headings. &lt;h1&gt; is used for main headings and is the largest. While the heading number increases by 1, the size of the heading decreases,<br /> until you reach &lt;h6&gt;, the smallest heading.</li> 
+            <br>
+            <ul>
+              <li><h1 class ="headings">&lt;h1&gt;h1&lt;/h1&gt; will return h1 as the header. h1 should only appear once on a page.</h1></li>
+              <li><h6 class ="headings">&lt;h6&gt;h6&lt;/h6&gt; will return h6 as the header</h6></li>
+            </ul>
+            <br>
+          <li>Paragraphs - &lt;p&gt;A paragraph is one or more sentences combined into a larger unit. They use these opening and closing tags.&lt;/p&gt;</li>
+          <li>Bold - &lt;b&gt<b>Text inside these bold opening and closing tags will appear bold.</b>&lt;/b&gt;</li>
+          <li>Italic - &lt;i&gt<i>Text inside these italic opening and closing tags will appear italic.</i>&lt;/i&gt;</li>
+          <li>Superscript - October 20&lt;sup&gtth&lt;/sup&gt; will return October 20<sup>th</sup></li>
+          <li>Subscript - H&lt;sub&gt2&lt;/sub&gt;O will return H<sub>2</sub>O</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Lists</h3>
+        <ul>
+          <li>Ordered lists</li>
+            <ol>
+              <li>Ordered lists start with the following opening and closing tags for the &lt;ol&gt element: &lt;ol&gt&lt;/ol&gt; </li>
+              <li>In this list, use the &lt;li&gt&lt;/li&gt; opening and closing tags to add items to the list</li>
+              <li>Items in this list will be ordered by numbers. There should be 3 items on this list, with this being item number 3.</li>
+            </ol>
+          <br>
+          <li>Unordered lists</li>
+            <ul>
+              <li>Unordered lists start with the following opening and closing tags for the &lt;ul&gt element: &lt;ul&gt&lt;/ul&gt;</li>
+              <li>In this list, use the &lt;li&gt&lt;/li&gt; opening and closing tags to add items to the list</li>
+              <li>Items in this list will be unordered and will contain a circle bullet point by default.</li>
+            </ul>
+          <br>
+        </ul>
+        <h3 class="subheader">Image</h3>
+        <p class="subheader">&lt;img&gt; elements contain information about images that are displayed on the webpage. This element can contain various attributes.</p>
+        <ul>
+          <li>The 'src' attribute defines the location of the image.</li>
+          <li>The 'alt' attribute contains a text string that describes the appearance and functionality of the image. This is important for screen readers and other assistive technologies. It can also improve search engine rankings for the website.</li>
+          <li>&lt;img src="file" alt="description"&gt;</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Anchor</h3>
+        <p class="subheader">&lt;a&gt; element creates links to the same webpage or other webpages.</p>
+        <ul>
+          <li>href attributes point to the URL for the link.</li>
+          <li>&lt;a href="URL"&gt;</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Link to CSS</h3>
+        <p class="subheader">The HTML &lt;link&gt; element creates the connection to the external file.</p>
+        <ul>
+          <li>&lt;link rel="stylesheet" href="./assets/style.css"&gt;</li>
+          <li>The rel attribute specifies the relationship between the current document and the linked document resource.</li>
+          <li>The href attribute specifies the location (URL) of the external resource. The href attribute is using a relative path. This means the location is derived from the current location (in this case, index.html). To locate the style sheet from the current location, we must look in the assets folder, hence assets/style.css.</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Footer</h3>
+        <p class="subheader">&lt;footer&gt; element appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</p>
+        <br>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <h3 class="subheader">Basics</h3>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>CSS Rule:</li>
+          <p class="example">Div {color: blue; text-align: justify}</p>
+            <ul>
+              <li>Div is a <b>selector</b></li>
+              <li><b>Selectors</b> define the element or attributes to which the rules, or declarations, will apply</li>
+              <li>Everything in the curly brackets is the <b>declaration bracket</b></li>
+              <li>color: blue; AND text-align; justify are both <b>declarations</b></li>
+              <li><b>Declarations</b> contain two important components: the CSS property we want to apply and the value of the property</li>
+              <li>color: AND text-align: are both <b>properties</b></li>
+              <li>blue; AND justify; are both <b>values</b></li>
+            </ul>
+            <br>
+          <li>There are three ways to style a webpage using CSS:</li>
+            <br>
+            <ul>
+              <li><strong>inline CSS:</strong></li>
+              <p class="subheader">Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only. They're useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</p>
+              <br>
+              <p class="example">&lt;h1 style="color: red;"&gt;Prework Study Guide&lt;/h1&gt;</p>
+              <br>
+              <li><strong>internal CSS style sheet:</strong></li>
+              <p class="subheader">Internal style sheets contain CSS rules for the webpage in the head section of the HTML file. The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code</p>
+              <p class="example"><br>&lt;head&gt;<br>&lt;style&gt;<br>h1 {<br>color: red;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;</p>
+              <br>
+              <li><strong>external CSS style sheet</strong></li>
+              <p class="subheader">This is the most common way to style a webpage. This allows developers to keep all their CSS rules in a separate file. When using an external style sheet, we link the file using a &lt;link&gt; element placed in the HTML's &lt;head&gt;, as shown in the following code:</p>
+              <p class="example"><br>&lt;head&gt;<br>&lt;link rel="stylesheet" href="./assets/style.css" /&gt;<br>&lt;/head&gt;</p>
+              <br>
+            </ul>
+          <li>A <b>margin</b> indicates how much space we want around the outside of an element.</li>
+          <li>A <b>padding</b> indicates how much space we want around the content inside an element.</li>
+          <li>The <b>CSS box model</b> refers to how every HTML element is essentially a box that consists of margins outside the element, and the element's borders, padding, and content.</li>
+          <li><b>text-align;</b>, a positioning property, is one way to center a title or heading on a webpage.</li>
+          <li>The <b>&lt;img&gt; selector</b> assigns propery values to any image element in the markup</li>
+          <li>The <b>display property</b> is assigned with the block value, which assigns each image to start on a new line</li>
         </ul>
+        <br>
+        <h3 class="subheader">Class attributes</h3>
+        <ul>
+          <li><strong>Class attributes</strong> allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+          <p class="example"><br>.card {<br>width: 80%;<br>margin: 40px auto;<br>border: 5px solid gray;<br>box-shadow: 5px 10px #888888;<br>}</p>
+          <br>
+          <li>The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain these property assignments from the CSS</li>
+          <li>The first declaration addresses the width of the element at 80% of the available width</li>
+          <li>The margin property assigns 40px to the top and bottom, and the auto value to the left and right</li>
+          <li>The border property assigns a border with a width of 5px that is solid and gray</li>
+          <li>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. In our example, the X offset is 5px and defines the width or extent of the shadow on the X axis (or to the right of the box); the Y offset is 10px and defines the extent on the Y axis (or just below the box). We haven't defined the blur or spread radius here, but you'll learn more about this in time. We've used an HTML hexadecimal code to define the color</li>
+        </ul>
+        <br>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <h3 class="subheader">Basics</h3>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li><b>Git</b> is a tool that allows developers and others to use version control</li>
+          <li><b>GitHub</b> is one of many web interfaces for using Git</li>
+          <li>A <b>repository (repo)</b> is a folder in which all files and their version histories are stored</li>
+          <li>A <b>branch</b> is a version of the repo that allows work without affecting other branches. Repos may have many branches for different possible changes being tested or considered, along with a default branch that serves as the sourch of truth</li>
+          <li>A <b>fork</b> is a new repository that inherits from a parent "upstream" repo. Is is used to suggest changes to an "upstream" public repo by someone who doesn't have access to edit in the repo's home org</li>
+          <li><b>Markdown (.md)</b> is a way to write content that converts plain text to formatted text</li>
+          <li><b>Commit changes</b> is a saved record of a change made to a file within the repo</li>
+          <li>A <b>pull request (PR)</b> is a request for changes made to a branch to be pulled into another branch. Allows multiple users to see, discuss and review work being suggested</li>
+          <li>After a pull request is approved, the commit will be <b>merged</b> from one branch to another</li>
+          <li><b>Issues</b> allow users to report issues or bugs and track progress of assigning the fix for the issues</li>
         </ul>
+        <br>
+        <h3 class="subheader">Git commands</h3>
+        <ul>
+          <li><b>git status</b> checks what branch we are currently on</li>
+          <li><b>git checkout -b branch-name</b> creates a new branch and switches to it</li>
+          <li><b>git add -A</b> adds changes to the current working branch</li>
+          <li><b>git commit -m "enter message"</b> creates a commit that captures a snashot of the currently staged changes</li>
+          <li><b>git pull origin main</b> makes sure the local branch is in sync with the base branch in GitHub</li>
+          <li><b>git push origin 'branch the code is in'</b> pushes the changes to the remote branch</li>
+        </ul>
+        <br>
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <h3 class="subheader">Basics</h3>
         <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>A <b>variable</b> is a named container that allows us to store <b>data</b> in our code.</li>
+          <li>To declare a variable, use the <b>var</b> keyword</li>
+          <p class="example">(var shape = "circle”;)</p>
+          <li>"shape" is the name of our <b>container</b>, or <b>variable</b>, and the <b>data</b> it stores is "circle"</li>
+          <li>There are 7 different data types that variables can store:</li>
+            <ol>
+              <li><strong>Strings</strong> are contained within quotation marks, "".</li>
+              <li><strong>Numbers</strong></li>
+              <li><strong>Booleans</strong></li>
+              <li><strong>Null</strong></li>
+              <li><strong>Undefined</strong></li>
+              <li><strong>Symbol</strong></li>
+              <li><strong>Object</strong></li>
+            </ol>
+          <br>
+          <li><b>Methods</b> are actions that can be performed on objects, objectName.methodName();</li>
+          <li>.length property returns the length of the string, or the number of items in the array, depending on how it is used.</li>
+          <li><b>Arguments</b> are values passed during function invocation</li>
+          <li>The <b>script.js</b> file is linked within the &lt;body&gt; element</li>
+          <li>The <b>console.log()</b> method is used daily to debug and easily test code</li>
+          <li>camelCasing is the appropriate syntax to use in JavaScript.</li>
+          <li>String Interpolation</li>
+          <li>String Concatenation</li>
         </ul>
+        <br>
+        <h3 class="subheader">Conditional statements</h3>
+        <ul>
+          <li><b>Conditional statements</b> and <b>loops</b> control the order in which code is executed, interrupting the control flow.</li>
+          <li><b>Control flow</b> is the order in which a computer executes code in a script. Code runs from the first statement at the top of the page, down to the alst statement at the bottom of the page</li>
+        </ul>
+        <br>
+        <h4 class="subheader">If, else, and else if statements</h4>
+        <ul>
+        <li>If</li>
+        <p class="example">if() {<br/>}</p>
+        <br>
+        <li>Else</li>
+        <p class="example">if() {<br/>console.log();<br/>} else {<br/>console.log();<br/>}</p>
+        <br>
+        <li>Else If</li>
+        <p class="example">if() {<br/>console.log();<br/>} else  if () {<br/>console.log();<br/>} else {<br/>console.log();<br/>}</p>
+        </ul>
+        <br>
+        <h4 class="subheader">Comparison Operators</h4>
+        <ul>
+          <li>less than &lt;</li>
+          <li>greater than &gt;</li>
+          <li>less than or equal to &lt;=</li>
+          <li>greater than or equal to &gt;=</li>
+          <li>is equal to ===</li>
+          <li>is not equal to !==</li>
+        </ul>
+        <br>
+        <h4 class="subheader">Logical Operators</h4>
+        <ul>
+          <li>the <i>and</i> operator &&</li>
+          <li>the <i>or</i> operator ||</li>
+          <li>the <i>not</i> operator, or the <i>bang</i> operator !</li>
+        </ul>
+        <br>
+        <h4 class="subheader">For loops</h4>
+        <ul>
+        <li><i>For Loops</i> includes an iterator variable that usually appears in all three expressions. The iterator variable is initialized, checked against the stopping condition, and assigned a new value on each loop iteration.</li>
+        <br>
+        <p class="code">for (let counter = 0; counter &lt; 4; counter++) {<br/>console.log(counter);<br/>}</p>
+        <br>
+          <li>Contains 3 expressions, separated by ; inside the parentheses:</li>
+            <ol>
+              <li>an initialization starts the loop and can also be used to declare the iterator variable (let counter = 0)</li>
+              <li>a stopping condition is the condition that the iterator variable is evaluated against - if the condition evaluates to true the code block will run, and if it evaluates to false the code will stop. (counter < 4)</li>
+              <li>an iteration statement is used to update the iterator variable one each loop (counter++)</li>
+            </ol>
+        </ul>
+        <br>
+        <h3 class="subheader">Arrays</h3>
+        <ul>
+          <li><b>Arrays</b> are lists of ordered, stored data and can hold items that are of any data type.</li>
+          <p class="example">const numberArray = [10, 21, 32, 43];</p>
+          <p class="example">numberArray[0] would be 10</p>
+          <li><b>Zero-Based Indexing</b> starts counting at 0.</li>
+        </ul>
+        <br>
+        <h3 class="subheader">Functions</h3>
+        <ul>
+          <li>A <b>function</b> is a set of instructions that tells the computer how to perform a certain task. You must call a function by name in order to execute it, allowing control of where in the control flow a task is executed, or if it is executed at all.</li>
+          <li>There are 2 requirements for a JavaScript function:</li>
+          <br>  
+            <ol>
+              <li>Define the function</li>
+                <ul>
+                  <li>Function declaration uses the function keyword in the function name to define a function</li>
+                  <li>Codeblock is called the function body</li>
+                </ul>
+              <li>Call the function</li>
+                <ul>
+                  <li>makeTea();</li>
+                  <li>When the function is called, the code block is executed</li>
+                </ul>
+            </ol>
+          <br>
+          <p class="code">function helloWorld() {<br/>// code block<br>}</p>
+        </ul>
+        <br>
       </section>    
     </main>
 
