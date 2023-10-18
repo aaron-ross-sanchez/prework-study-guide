@@ -15,7 +15,8 @@ footer {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     text-align: center;
 }
 
@@ -29,12 +30,16 @@ img {
 
 ul {
     padding-left: 40px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
+}
+
+.headings {
+    text-align: left;
 }
 
 .card {
@@ -42,4 +47,18 @@ p {
     margin: 40px auto;
     border: 5px solid gray;
     box-shadow: 5px 10px #888888;
+}
+
+.subheader {
+    text-align: left;
+    text-indent: 15px;
+}
+
+.example {
+    text-align: left;
+    text-indent: 15px;
+}
+
+.code {
+    text-align: left;
 }
